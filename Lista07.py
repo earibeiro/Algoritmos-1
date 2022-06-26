@@ -119,7 +119,7 @@ for tabuada in range (1, 11):
 #usuário precisa informar três números).
 
 #Possivel solução 1
-
+"""
 num3 = int(input("Digite qual o número que você quer ver a tabuada: "))
 num1 = int(input("Digite em qual número você quer iniciar a tabuada: "))
 num2 = int(input("Digite em qual número você quer terminar a tabuada: "))
@@ -130,3 +130,36 @@ num2 = num2+1
 for conta in range (num1, num2):
     num4 = num3*conta
     print("{} x {} = {}".format(num3,conta,num4))
+"""
+#Possivel solução 2
+"""
+num1 = int(input("Digite a primeira tabuada: "))
+num2 = int(input("Digite a segunda tabuada: "))
+num3 = int(input("Digite a terceira tabuada: "))
+for tabuada in range (1, 11):
+    num4 = num1*tabuada
+    print("{} x {} = {}".format(num1,tabuada,num4))
+print("---------------------------")
+for tabuada in range (1, 11):
+    num4 = num2*tabuada
+    print("{} x {} = {}".format(num2,tabuada,num4))
+print("---------------------------")
+for tabuada in range (1, 11):
+    num4 = num3*tabuada
+    print("{} x {} = {}".format(num3,tabuada,num4))
+"""
+#Possível solução 3 - tabuadas que vão seguem um intervalo. Ex: 1, 2 e 3. Tabuada do 1, do 2 e do 3.
+inicio = int(input("Digite a primeira tabuada do intervalo: "))
+for meio in range (1,11):
+    fim = inicio*meio
+    print("{} x {} = {}".format(inicio, meio, fim))
+print("-------------------")
+inicio = inicio+1
+for meio in range(1,11):
+    fim = inicio*meio
+    print("{} x {} = {}".format(inicio, meio, fim))
+print("-------------------")
+inicio = inicio+1
+for meio in range (1,11):
+    fim = inicio*meio
+    print("{} x {} = {}".format(inicio, meio, fim))
