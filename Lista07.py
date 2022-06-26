@@ -1,35 +1,36 @@
-#Faça um programa em Python utilizando o #for 
+#1. Faça um programa em Python utilizando o #for 
 #(um programa pra cada um), que:
-#Apresente os números de 1 a 100 (um por linha).
+
+#a) Apresente os números de 1 a 100 (um por linha).
 """
 for batata in range (1, 101, 1):
     print(batata)
 """
-#Apresente os números de 100 a 1 (um por linha).
+#b) Apresente os números de 100 a 1 (um por linha).
 """
 for empanada in range (100,-1,-1):
     print(empanada)
 """    
-#Apresente os números pares de 1 a 100 (um por linha).
+#c) Apresente os números pares de 1 a 100 (um por linha).
 """
 for pastel in range (1,101,1):
     if (pastel % 2 == 0):
         print (pastel)
 """
-#Apresente os números ímpares de 1 a 100 (um por linha).
+#d) Apresente os números ímpares de 1 a 100 (um por linha).
 """
 for cocageladinha in range (1, 101, 1):
     if (cocageladinha % 2 !=0):
         print(cocageladinha)
 """
-#Faça a soma dos números de 1 a 100 e ao final mostre apenas a soma total.
+#e) Faça a soma dos números de 1 a 100 e ao final mostre apenas a soma total.
 """
 x = 0
 for y in range (x, 101):
     x=x+y
 print(x)
 """
-#Faça a soma dos números de X a Y (informados pelo usuário), desde que X seja menor que Y, e apresente o valor total (semelhante ao anterior).
+#f) Faça a soma dos números de X a Y (informados pelo usuário), desde que X seja menor que Y, e apresente o valor total (semelhante ao anterior).
 #Solução 1
 """
 print ("Vamos somar os números entre o intervalo que você indicar!")
@@ -58,8 +59,9 @@ for contagem in range (x,y, 1):
     x = x + contagem
 print("O resultado total é: ", x-1)
 """
-#Faça a multiplicação dos números de 1 a j (fatorial) e mostre o resultado final.
+#g) Faça a multiplicação dos números de 1 a j (fatorial) e mostre o resultado final.
 # Exemplo: Se j = 5 você deve calcular 1 * 2 * 3 * 4 * 5 = 120
+"""
 j = int(input("Digite o valor do fatorial: "))
 if(j == 0):
     print("O resultado é: ",1)
@@ -67,3 +69,64 @@ else:
     for fatorial in range (1, j):
         j = j * fatorial 
     print (j)
+"""
+#2. Faça um programa que leia 5 números e informe apenas o maior número.
+"""
+num1 = 0
+for maior in range (1, 6):
+    num2 = int(input("Digite o {}° valor: ".format(maior)))
+    if (num2 > num1):
+        num1 = num2
+print(num1)
+"""
+#3. Faça um programa que leia 5 números e informe a soma e a média dos números.
+"""
+num1 = 0
+for media in range (1, 6):
+    num2 = int(input("Digite o {}° valor: ".format(media)))
+    num1 = num1+num2
+print("A soma dos valores corresponde a {} e a média é igual a {}".format(num1,num1/5))
+"""
+#4. Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.
+"""
+for impares in range (1,51):
+    if(impares%2 !=0):
+        print(impares)
+"""
+#5. O Sr. Manoel Joaquim possui uma grande loja de artigos de R$ 1,99, com cerca de
+#10 caixas. Para agilizar o cálculo de quanto cada cliente deve pagar ele
+#desenvolveu uma tabela que contém o número de itens que o cliente comprou e ao 
+#lado o valor da conta. Desta forma a atendente do caixa precisa apenas contar 
+#quantos itens o cliente está levando e olhar na tabela de preços. Você foi 
+#contratado para desenvolver o programa que monta esta tabela de preços, que
+#conterá os preços de 1 até 50 produtos, conforme o exemplo abaixo:
+"""
+print ("Lojas Quase Dois - Tabela de preços")
+for preco in range (1, 51):
+    num = 1.99*preco
+    print("{} produto = R$ {} reais".format(preco,num))
+"""
+#6. Utilizando o laço de repetição for, faça um programa que apresente as tabuadas do 1 ao 10 para um número informado pelo usuário.
+"""
+print("Vamos calcular a tabuada, meu jovem!")
+num = int(input("Digite o número que você deseja ver a tabuada: "))
+for tabuada in range (1, 11):
+    num1 = num*tabuada
+    print("{} x {} = {}".format(num,tabuada,num1))
+"""
+#7. Utilizando o laço de repetição for, faça um programa que apresente as tabuadas do 
+# X a Y para um número informado pelo usuário (semelhante ao anterior, porém o 
+#usuário precisa informar três números).
+
+#Possivel solução 1
+
+num3 = int(input("Digite qual o número que você quer ver a tabuada: "))
+num1 = int(input("Digite em qual número você quer iniciar a tabuada: "))
+num2 = int(input("Digite em qual número você quer terminar a tabuada: "))
+if (num1 > num2):
+    num1 = int(input("Digite em qual número você quer iniciar a tabuada: "))
+    num2 = int(input("Digite em qual número você quer terminar a tabuada: "))
+num2 = num2+1
+for conta in range (num1, num2):
+    num4 = num3*conta
+    print("{} x {} = {}".format(num3,conta,num4))
