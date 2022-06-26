@@ -149,6 +149,7 @@ for tabuada in range (1, 11):
     print("{} x {} = {}".format(num3,tabuada,num4))
 """
 #Possível solução 3 - tabuadas que vão seguem um intervalo. Ex: 1, 2 e 3. Tabuada do 1, do 2 e do 3.
+"""
 inicio = int(input("Digite a primeira tabuada do intervalo: "))
 for meio in range (1,11):
     fim = inicio*meio
@@ -163,3 +164,4 @@ inicio = inicio+1
 for meio in range (1,11):
     fim = inicio*meio
     print("{} x {} = {}".format(inicio, meio, fim))
+"""
