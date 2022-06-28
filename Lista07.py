@@ -189,3 +189,14 @@ for temps in range (1,11):
         lowtemp = temperatura
 print("A menor temperatura registrada foi {}°, a maior temperatura foi {}° e a média de {}°".format(lowtemp,bigtemp,avgtemp/10))
 """
+#Exercício 13: Considerando a fórmula abaixo para calcular o valor de H, faça um programa 
+#que peça ao usuário qual o termo final (N) e calcule o valor de H:
+#H = 1 + 1/2 + 1/3 + 1/4 + ... + 1/N
+"""
+h = 0
+n = int(input("Digite o termo final: "))
+n = n+1
+for banana in range (1,n):
+    h = h + 1/banana
+print(h)
+"""
