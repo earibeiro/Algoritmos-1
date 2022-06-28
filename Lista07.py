@@ -66,9 +66,16 @@ j = int(input("Digite o valor do fatorial: "))
 if(j == 0):
     print("O resultado é: ",1)
 else:       
-    for fatorial in range (1, j):
+    for fatorial in range (0, j):
         j = j * fatorial 
     print (j)
+"""
+"""
+x = 5
+fat = 1
+for cont in range (x, 0, -1):
+    fat = cont*fat
+print(fat)
 """
 #2. Faça um programa que leia 5 números e informe apenas o maior número.
 """
