@@ -63,12 +63,10 @@ print("O resultado total é: ", x-1)
 # Exemplo: Se j = 5 você deve calcular 1 * 2 * 3 * 4 * 5 = 120
 """
 j = int(input("Digite o valor do fatorial: "))
-if(j == 0):
-    print("O resultado é: ",1)
-else:       
-    for fatorial in range (0, j):
-        j = j * fatorial 
-    print (j)
+j = j + 1     
+for fatorial in range (0, j):
+    j = j * fatorial 
+print (j)
 """
 """
 x = 5
