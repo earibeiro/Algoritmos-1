@@ -200,3 +200,35 @@ for banana in range (1,n):
     h = h + 1/banana
 print(h)
 """
+
+#Exercício de aula do dia 2022.06.28
+soma = 0
+vari2 = 0
+y = 0
+z = 10000
+
+for raspadinha in range (1,7):
+    x = int(input(f"Digite o {raspadinha}° número: "))
+    x = str(x)
+    if (len(x) > 4):
+        print("Erro!")
+        x = float(input(f"Digite o {raspadinha}° número: "))
+    x = int(x)
+    if (y<x):
+        y = x
+
+    if(z>x):
+        z = x
+
+    if(x%2 == 0):
+        soma = soma+1
+
+    else:
+        vari2 = vari2+1
+
+print(f"Você digitou {soma} pares")
+print(f"Você digitou {vari2} ímpares")
+print(f"O menor número é {z}")
+print(f"O maior número é {y}")
+
+
