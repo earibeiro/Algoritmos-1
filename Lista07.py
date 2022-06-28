@@ -170,3 +170,22 @@ for meio in range (1,11):
     fim = inicio*meio
     print("{} x {} = {}".format(inicio, meio, fim))
 """
+
+#Exercício 12: Departamento Estadual de Meteorologia lhe contratou para desenvolver um programa 
+#utilizando laço de repetição (for ou while) que leia 10 temperaturas para calcular e informar na tela:
+# a menor temperatura
+# a maior temperatura
+# a média das temperaturas
+"""
+bigtemp = 0
+lowtemp = 100
+avgtemp = 0
+for temps in range (1,11):
+    temperatura = float(input("Digite a temperatura: "))
+    avgtemp = avgtemp + temperatura
+    if (bigtemp < temperatura):
+        bigtemp = temperatura
+    if (lowtemp > temperatura):
+        lowtemp = temperatura
+print("A menor temperatura registrada foi {}°, a maior temperatura foi {}° e a média de {}°".format(lowtemp,bigtemp,avgtemp/10))
+"""
