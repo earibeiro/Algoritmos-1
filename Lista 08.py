@@ -95,3 +95,27 @@ while (opt!=4):
     else:
         print("Saindo...")
 """
+#7) Faça um programa que mostre o menu a seguir, receba a opção do usuário e dos dados
+# necessários para executar cada operação. O programa será executado repetidamente até
+# que o usuário passe o número informado para sair do programa (opção).
+menu = 0
+while (menu!=4):
+    print("====== Menu Principal ======\n1. Fazer a tabuada do 1 ao 10 para um número X\n2. Apresentar os múltiplos de X entre 1 e 100\n3. Apresentar a soma dos números de 1 a 100\n4. Sair do programa")
+    menu = int(input("Selecione a opção desejada do menu: "))
+    while(menu > 4 or menu < 1):
+        print("Erro")
+        menu = int(input("Selecione a opção desejada do menu: "))
+    if (menu == 1):
+        tabu = int(input("Digite o número que você deseja ver a tabuada: "))
+        for cont in range (1, 11):
+            ada = tabu*cont
+            print(f"{tabu} x {cont} = {ada}")
+    elif (menu == 2):
+        mult = int (input("Digite o número que deseja saber os múltiplos: "))
+        for contador in range(1, 101):
+            if(contador%mult==0):
+                print(contador)
+    elif (menu == 3):
+        preencheaqui
+    else:
+        print("Valeu, falou!")
