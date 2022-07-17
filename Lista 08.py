@@ -1,3 +1,51 @@
+#1) Faça algoritmos em Python, utilizando o while, que:
+#a) Apresente na tela os números de 1 a 100.
+
+#b) Faça a soma dos números de 1 a 100 e apresente somente o resultado.
+
+#c) Apresente na tela somente os números pares entre 50 e 100.
+
+#d) Apresente na tela somente os números ímpares entre 1 e 50.
+
+#e) Apresente na tela somente a soma dos números pares entre 1 e 100.
+
+#f) Apresente na tela os números de X a Y 
+# (peça para o usuário informar os valores de X e de Y).
+
+#g) Faça a soma dos números de X a Y e apresente somente o resultado
+# (peça para o usuário informar os valores de X e de Y).
+
+#h) Apresente na tela somente os números ímpares entre X e Y
+# (peça para o usuário informar os valores de X e de Y).
+
+#2) Faça um programa para calcular a tabuada:
+#a) do 1 ao 10 para um número informado pelo usuário.
+
+#b) do X ao Y para um número informado pelo usuário
+# (o usuário também deve informar os valores de X e Y).
+
+#3) Na matemática, o fatorial é um número natural 'n', representado por 'n!',
+# é o produto de todos os inteiros positivos menores ou iguais a 'n'. Por exemplo:
+# o fatorial de 5 é representado por 5! que é igual a 5x4x3x2x1. Fala um programa que
+#  peça um número para o usuário e apresente na tela seu fatorial.
+
+#4) Sendo 'H = 1 + 1/2 + 1/3 + 1/4 + ... + 1/N', faça um programa que peça ao
+# usuário qual o termo final (N) e calcule o valor de H.
+n = int(input("Digite o termo final do cálculo: "))
+contador = 1
+h = 0
+while (contador <= n):
+    h = h + (1/contador)
+    contador += 1
+print(h)
+
+
+
+    
+
+ 
+
+#Não é um exercício
 """
 cont = 100
 num = 0
@@ -98,6 +146,7 @@ while (opt!=4):
 #7) Faça um programa que mostre o menu a seguir, receba a opção do usuário e dos dados
 # necessários para executar cada operação. O programa será executado repetidamente até
 # que o usuário passe o número informado para sair do programa (opção).
+"""
 menu = 0
 while (menu!=4):
     print("====== Menu Principal ======\n1. Fazer a tabuada do 1 ao 10 para um número X\n2. Apresentar os múltiplos de X entre 1 e 100\n3. Apresentar a soma dos números de 1 a 100\n4. Sair do programa")
@@ -119,3 +168,4 @@ while (menu!=4):
         preencheaqui
     else:
         print("Valeu, falou!")
+"""
