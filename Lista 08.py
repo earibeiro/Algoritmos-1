@@ -1,7 +1,18 @@
 #1) Faça algoritmos em Python, utilizando o while, que:
 #a) Apresente na tela os números de 1 a 100.
+"""
+numeros = 1
+while (numeros <=100):
+    print(numeros)
+    numeros +=1
+"""
 
 #b) Faça a soma dos números de 1 a 100 e apresente somente o resultado.
+contador = 1
+soma = 0
+while(contador <=100):
+    soma = soma + contador
+print(soma)
 
 #c) Apresente na tela somente os números pares entre 50 e 100.
 
@@ -148,7 +159,7 @@ while (opt!=4):
 #7) Faça um programa que mostre o menu a seguir, receba a opção do usuário e dos dados
 # necessários para executar cada operação. O programa será executado repetidamente até
 # que o usuário passe o número informado para sair do programa (opção).
-
+"""
 menu = 0
 soma = 0
 while (menu!=4):
@@ -174,4 +185,26 @@ while (menu!=4):
         soma = 0
     else:
         print("Valeu, falou!")
+"""
 
+#8)
+"""
+cont = 0
+opt = 1
+while(opt!=0):
+    cont += 1
+    opt = int(input("Se desejar sair pressione 0, se não, outro número."))
+    if (opt != 0):
+        prod = float(input("Digite o valor do produto: "))
+"""
+
+#9) O departamento Estadual de Meteorologia lhe contratou para desenvolver um programa
+# que leia sete temperaturas, e informe ao final a menos e a maior temperatura, além da
+# média das temperaturas.
+"""
+tempmax = -999999999999999999999999999999999
+tempmin = 9999999999999999999999999999999999
+print("Bem vindo ao programa de leitura de temperatuas")
+temp = float(input("Digite a temperatura em graus celsius: "))
+"""
+    
