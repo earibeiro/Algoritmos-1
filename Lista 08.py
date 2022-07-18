@@ -8,11 +8,13 @@ while (numeros <=100):
 """
 
 #b) Faça a soma dos números de 1 a 100 e apresente somente o resultado.
+
 contador = 1
 soma = 0
 while(contador <=100):
     soma = soma + contador
 print(soma)
+print("oi")
 
 #c) Apresente na tela somente os números pares entre 50 e 100.
 
