@@ -17,6 +17,12 @@ print(soma)
 print("oi")
 
 #c) Apresente na tela somente os números pares entre 50 e 100.
+cont = 50
+while(cont <= 100):
+    if (cont%2==0):
+        print(cont)
+    cont += 1
+
 
 #d) Apresente na tela somente os números ímpares entre 1 e 50.
 
