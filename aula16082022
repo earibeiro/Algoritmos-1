@@ -1,0 +1,108 @@
+"""
+import random
+count = int(input("Digite a quantidade de vetores: "))
+vet = [0.0]*count
+
+for i in range (0,count):
+    vet[i] = float(input("Digite o valor: "))
+
+
+i = 0
+while (i<count):
+    vet[i] = float(input("Digite o valor: "))
+    i+=1
+c = 0
+while (c<count):
+    print(f"O vetor {c} equivale a {vet[c]}")
+    c+=1
+
+for i in range (0,len(vet)):
+    vet[i] = random.randint(0,30)
+
+for i in range (0,len(vet)):
+    
+    print(f"O valor do {i} índice é: {vet[i]}")
+    
+found = 0
+what = int(input("Digite um número: "))
+for i in range (0,len(vet)):
+    if (what == vet[i]):
+        found = True
+
+if (found == True):
+    print("Encontrado")
+else:
+    print("Não encontrado")
+
+what = int(input("Digite um número: "))
+esta = 0
+for i in range(0, len(vet)):
+    if (what != vet[i]):
+        esta+=1
+
+if(esta == len(vet)):
+    print("Não encontrei")
+else:
+    print("Encontrei")
+"""
+"""
+#Criar vetor com tamanho de 5 a 15
+import random
+aleatorio = random.randint(5,15)
+vector = [0]*aleatorio
+#Preencher com valores entre 0 e 30
+for i in range (0, len(vector)):
+    vector[i] = random.randint(0,30)
+#Mostrar os valores e posições
+for i in range (0,len(vector)):
+    print(f"O vetor {i} possui valor: {vector[i]}")
+#Informar quantos ímpares tem
+soma = 0
+for i in range (0,(len(vector))):
+    if(vector[i]%2!=0):
+        soma+=1
+print(f"Existem {soma} números ímpares")
+#Informar a média dos pares
+soma2 = 0
+contar = 0
+for i in range (0,len(vector)):
+    if(vector[i]%2==0):
+        soma2=soma2+vector[i]
+        contar+=1
+media = soma2/contar
+print(f"O somatório dos pares é: {soma2}\nA média dos números pares é de: {media}")
+"""
+#Criar dois vetores com o mesmo tamanho entre 5 e 15
+import random
+aleatorio = random.randint(5,15)
+vetor1 = [0]*aleatorio
+vetor2 = [0]*aleatorio
+vetor3 = [0]*aleatorio
+#Preencher com valores entre 0 e 30
+for i in range (0,len(vetor1)):
+    vetor1[i] = random.randint(0,30)
+    print(f"{vetor1[i]}")
+print("\n")
+for a in range(0, len(vetor2)):
+    vetor2[a] = random.randint(0,30)
+    print(f"{vetor2[a]}")
+print("\n")
+#Criar um terceiro vetor contendo a soma dos dois vetores
+for y in range (0, len(vetor1)):
+    abc = vetor1[y]
+    cba = vetor2[len(vetor2)-1 -y]
+    vetor3[y] = abc+cba 
+
+print(vetor1)
+print(vetor2)
+print(vetor3)
+"""
+for i in range (0,len(vetor1)):
+    print(f"{vetor1[i]}")
+
+for i in range(0, len(vetor2)):
+    print(f"{vetor2[i]}")
+
+for i in range(0, len(vetor3)):
+    print(f"{vetor3[i]}")
+"""
