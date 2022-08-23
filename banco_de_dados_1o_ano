@@ -29,3 +29,13 @@ DROP DATABASE IF EXISTS nova_data;
 CREATE DATABASE pizza_de_strogonofe;
 USE pizza_de_strogonofe;
 /**  **/
+
+DROP DATABASE IF EXISTS cliente;
+CREATE DATABASE cliente;
+USE cliente;
+
+CREATE TABLE cliente (
+id INT NOT NULL PRIMARY KEY
+,nome VARCHAR(255) NOT NULL UNIQUE
+,cpf VARCHAR(15) NOT NULL UNIQUE
+);
